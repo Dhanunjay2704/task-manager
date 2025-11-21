@@ -1,0 +1,33 @@
+.search-box {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-input {
+  padding-right: 36px;
+}
+
+.search-clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+  transition: color 0.3s ease;
+}
+
+.search-clear:hover {
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .search-box {
+    min-width: 100%;
+  }
+}

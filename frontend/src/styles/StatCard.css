@@ -1,0 +1,68 @@
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.stat-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.stat-info h3 {
+  font-size: 28px;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.stat-info p {
+  font-size: 13px;
+  color: var(--text-light);
+  margin: 4px 0 0 0;
+}
+
+/* Stat variants */
+.stat-pending {
+  border-left: 4px solid #f59e0b;
+}
+
+.stat-progress {
+  border-left: 4px solid #3b82f6;
+}
+
+.stat-completed {
+  border-left: 4px solid #10b981;
+}
+
+.stat-total {
+  border-left: 4px solid #8b5cf6;
+}
+
+.stat-default {
+  border-left: 4px solid var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .stat-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .stat-icon {
+    font-size: 24px;
+  }
+
+  .stat-info h3 {
+    font-size: 24px;
+  }
+}

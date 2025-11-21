@@ -1,0 +1,52 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.card-default {
+  border: 1px solid var(--border-color);
+}
+
+.card-error {
+  background-color: #fee2e2;
+  border: 1px solid var(--danger-color);
+  border-radius: 6px;
+  padding: 12px;
+  color: #991b1b;
+  border-left: 4px solid var(--danger-color);
+}
+
+.card-success {
+  background-color: #d1fae5;
+  border: 1px solid var(--secondary-color);
+  border-radius: 6px;
+  padding: 12px;
+  color: #065f46;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.card-info {
+  background-color: #dbeafe;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  padding: 12px;
+  color: #1e40af;
+  border-left: 4px solid #3b82f6;
+}
+
+.card-warning {
+  background-color: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 6px;
+  padding: 12px;
+  color: #92400e;
+  border-left: 4px solid #f59e0b;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 12px;
+  }
+}
